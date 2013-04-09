@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JQuery Mobile</title>
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<link href="jquery.mobile-1.3.0.min.css" rel="stylesheet">
+<script src="jquery-1.8.2.min.js"></script>
+<script src="jquery.mobile-1.3.0.min.js"></script>
+</head>
+
+<body>
+
+	<div data-role="page" data-theme="b" id="pagina1">
+    	<div data-role="header" data-theme="e">
+        	<h1>Transiciones</h1>
+        </div>
+        
+        <div data-role="content">
+			<a href="#pagina2" data-role="button">Default (fade)</a>
+			<a href="#pagina2" data-role="button" data-transition="slide">Slide</a>
+            <a href="#pagina2" data-role="button" data-transition="slidedown">Slide Down</a>
+            <a href="#pagina2" data-role="button" data-transition="slideup">Slide Up</a>
+            <a href="#pagina2" data-role="button" data-transition="pop">Plop</a>
+            <a href="#pagina2" data-role="button" data-transition="flip">Flip</a>
+        </div>
+        
+        <div data-role="footer">
+        	<h4>www.jquerymobile.com</h4>
+        </div>
+    </div>
+    
+    <div data-role="page" data-theme="b" id="pagina2" data-add-back-btn="true">
+    	<div data-role="header" data-theme="e">
+        	<h1>Segunda página</h1>
+        </div>
+        
+        <div data-role="content">
+			<p>Esta es la segunda página</p>
+            <p><a href="#pagina1" data-rel="back">Volver</a></p>
+        </div>
+        
+        <div data-role="footer" data-theme="b">
+        	<h4>Mario</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
